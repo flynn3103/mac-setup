@@ -129,24 +129,13 @@ brew_tap telepresenceio/telepresence
 brew_install telepresence-oss
 brew_cask_install gcloud-cli "Google Cloud SDK"
 
-# --- Internal / Chotot tooling (requires Carousell org GitHub access) ---
-brew_tap carousell/ct-homebrew
-brew_install_optional ctprompt
 
 # --- AI Coding Assistants (CLI) ---
 brew_cask_install claude-code "Claude Code"
 brew_cask_install codex "Codex"
 brew_tap anomalyco/tap
 brew_install anomalyco/tap/opencode
-# NOTE: gemini-cli formula is deprecated upstream (removal ~2026-12-18).
-# Replacement going forward is the antigravity-cli cask.
-brew_install gemini-cli
-brew_cask_install antigravity-cli "Antigravity CLI"
 
-# --- AI Coding Assistants (Desktop / IDE) ---
-brew_cask_install opencode-desktop "OpenCode"
-brew_cask_install conductor "Conductor"
-brew_cask_install antigravity "Antigravity"
 
 # Applications (casks)
 brew_cask_install orbstack "OrbStack"
@@ -155,28 +144,19 @@ brew_cask_install google-chrome "Google Chrome"
 brew_cask_install cloudflare-warp "Cloudflare WARP"
 brew_cask_install iterm2 "iTerm"
 brew_cask_install visual-studio-code "Visual Studio Code"
-brew_cask_install jetbrains-idea "IntelliJ IDEA"
-brew_cask_install goland "GoLand"
 brew_cask_install datagrip "DataGrip"
 brew_cask_install notion "Notion"
 brew_cask_install lens "Lens"
-brew_cask_install freelens "Freelens"
 brew_cask_install dia "Dia"
-brew_cask_install drawio "draw.io"
 brew_cask_install obsidian "Obsidian"
 
 # Databases / API tooling
-brew_cask_install docker-desktop "Docker"
 brew_cask_install postman "Postman"
 brew_cask_install dbeaver-community "DBeaver"
-brew_cask_install another-redis-desktop-manager "Another Redis Desktop Manager"
 
 # System utilities
 brew_cask_install stats "Stats"
 brew_cask_install logi-options-plus "Logi Options+"
-brew_cask_install teamviewer "TeamViewer"
-# Amphetamine (keep-awake utility) is Mac App Store only, install manually:
-# https://apps.apple.com/app/amphetamine/id937984704
 
 # Communication
 brew_cask_install zalo "Zalo"
